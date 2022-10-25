@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <Meta />
       <Nav />
       <div>
-        <main className="bg-[#fffbe8] dark:bg-[rgb(17,24,39)]  antialiased">
+        <main className="bg-[#ffffff] dark:bg-[rgb(17,24,39)]  antialiased">
           <Header />
           {children}
           <Footer />

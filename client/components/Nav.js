@@ -39,25 +39,35 @@ const Nav = () => {
               }
               onClick={() => setFocus(1)}
             >
-              <Link href="/works">Events</Link>
+              <Link href="/tags">Tags</Link>
             </li>
             <li
               className={
                 focus === 2
                   ? "hover:underline mx-3 border-sky-300  border-[3px]  bg-sky-50 dark:bg-[#2C7A7B] px-2 py-1"
-                  : "hover:underline px-2 py-1 mx-3  border-[3px] border-none dark:border-gray-800"
+                  : "hover:underline px-2 py-1 mx-3 border-[3px] border-none dark:border-gray-800"
               }
               onClick={() => setFocus(2)}
             >
-              <Link href="/posts">Archive</Link>
+              <Link href="/profiles/profile?name=Sudhanshu%20Ranjan">Profile</Link>
             </li>
             <li
               className={
                 focus === 3
                   ? "hover:underline mx-3 border-sky-300  border-[3px]  bg-sky-50 dark:bg-[#2C7A7B] px-2 py-1"
-                  : "hover:underline px-2 py-1 mx-3 border-[3px] border-none dark:border-gray-800"
+                  : "hover:underline px-2 py-1 mx-3  border-[3px] border-none dark:border-gray-800"
               }
               onClick={() => setFocus(3)}
+            >
+              <Link href="/posts">Archive</Link>
+            </li>
+            <li
+              className={
+                focus === 4
+                  ? "hover:underline mx-3 border-sky-300  border-[3px]  bg-sky-50 dark:bg-[#2C7A7B] px-2 py-1"
+                  : "hover:underline px-2 py-1 mx-3 border-[3px] border-none dark:border-gray-800"
+              }
+              onClick={() => setFocus(4)}
             >
               <a
                 href="https://github.com/SudhansuuRanjan/my-portfolio"

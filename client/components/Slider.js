@@ -30,7 +30,7 @@ const Slider = () => {
                             Sci-Fi
                         </span>
                         <span className="bg-green-200 text-green-800 px-2 rounded-full py-1 text-sm hover:bg-green-800 hover:text-white hover:font-md cursor-pointer m-1">
-                            Sci-Fi
+                            Action
                         </span>
                     </div>
 
