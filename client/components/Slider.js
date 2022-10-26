@@ -7,12 +7,15 @@ import {
     AiOutlineLeft,
     AiOutlineRight,
 } from "react-icons/ai";
+import Title from "./Title";
 
 const Slider = () => {
     const [liked, setLiked] = useState(false);
 
     return (
-        <div className="carousel flex flex-col md:flex-row lg:flex-row  py-[3rem] items-center w-[100%] m-auto">
+        <>
+        <Title description="Discover the most outstanding articles in all topics of life." title="Editor's pick 💡"/>
+        <div className="carousel flex flex-col md:flex-row lg:flex-row  py-[3rem] items-center w-[90%] md:w-[100%] lg:w-[100%] m-auto">
             <div className="lg:w-[15rem]  md:w-[15rem] w-0"></div>
 
             <div className="after:bg-cover flex justify-center md:justify-end lg:justify-end overflow-hidden items-center m-auto">
@@ -80,6 +83,8 @@ const Slider = () => {
                 </div>
             </div>
         </div>
+
+        </>
     );
 };
 

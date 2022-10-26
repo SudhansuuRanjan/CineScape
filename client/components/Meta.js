@@ -7,7 +7,6 @@ const Meta = ({ title, keywords, description }) => {
         <meta name="description" content={description} />
         <meta name="author" content="Sudhanshu Ranjan" />
         <meta name="author" content="Spectre_7" />
-        <link rel="manifest" href="/site.webmanifest"></link>
         <meta property="og:site_name" content="Sudhanshu Ranjan" />
         <meta name="og:title" content="Sudhanshu Ranjan" />
         <meta property="og:type" content="website" />

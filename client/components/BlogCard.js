@@ -8,14 +8,14 @@ import {
 } from "react-icons/ai";
 import { FiShare } from "react-icons/fi";
 import { RiWhatsappFill } from 'react-icons/ri'
-import { FaFacebook, FaTelegramPlane, FaTwitter} from 'react-icons/fa'
+import { FaFacebook, FaTelegramPlane, FaTwitter } from 'react-icons/fa'
 
 const BlogCard = () => {
 
-   const [sharePopup, setSharePopup] = useState(false);
+    const [sharePopup, setSharePopup] = useState(false);
 
     return (
-        <div className="overflow-hidden min-w-[18rem] bg-[#ffffff] dark:bg-[rgb(21,29,47)] border border-gray-700 rounded-3xl my-3 relative">
+        <div className="overflow-hidden min-w-[18rem]  bg-[#ffffff] dark:bg-[rgb(21,29,47)] border border-gray-700 rounded-3xl my-3 relative">
             <div className="bg-cover h-[15rem] min-w-[18rem] overflow-hidden flex items-center justify-center">
                 <img
                     className="hover:scale-[102%] ease-in duration-300"
@@ -66,30 +66,30 @@ const BlogCard = () => {
             {
                 sharePopup && <div className="p-1 py-3 bg-[#ffffff] shadow-md border border-gray-700 dark:bg-[rgb(20,29,47)] absolute rounded-2xl bottom-1 right-1 flex flex-col gap-2">
 
-                <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
-                    <div><AiOutlineLink /></div>
-                    <p>Copy Link</p>
-                </button>
-                <div className="h-[0.1rem] w-[100%] bg-gray-800">
+                    <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
+                        <div><AiOutlineLink /></div>
+                        <p>Copy Link</p>
+                    </button>
+                    <div className="h-[0.1rem] w-[100%] bg-gray-800">
 
+                    </div>
+                    <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
+                        <div><FaFacebook /></div>
+                        <p>Facebook</p>
+                    </button>
+                    <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
+                        <div><FaTwitter /></div>
+                        <p>Twitter</p>
+                    </button>
+                    <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
+                        <div><FaTelegramPlane /></div>
+                        <p>Telegram</p>
+                    </button>
+                    <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
+                        <div><RiWhatsappFill /></div>
+                        <p>WhatsApp</p>
+                    </button>
                 </div>
-                <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
-                    <div><FaFacebook /></div>
-                    <p>Facebook</p>
-                </button>
-                <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
-                    <div><FaTwitter /></div>
-                    <p>Twitter</p>
-                </button>
-                <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
-                    <div><FaTelegramPlane /></div>
-                    <p>Telegram</p>
-                </button>
-                <button onClick={() => setSharePopup(false)} className="flex items-center gap-3 hover:bg-[rgb(39,84,189)] cursor-pointer rounded px-5 py-1 pr-10">
-                    <div><RiWhatsappFill /></div>
-                    <p>WhatsApp</p>
-                </button>
-            </div>
             }
         </div>
     );
