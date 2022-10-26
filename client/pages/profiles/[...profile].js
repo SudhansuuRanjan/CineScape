@@ -25,16 +25,16 @@ const Profile = () => {
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis pariatur eum voluptates est impedit magnam quisquam modi obcaecati? Quis est assumenda in asperiores a recusandae excepturi.
                                 </p>
                                 <div className='flex text-2xl gap-2 pt-2'>
-                                    <a href="/">
+                                    <a href="#">
                                         <AiOutlineWhatsApp/>
                                     </a>
-                                    <a href="/">
+                                    <a href="#">
                                         <AiOutlineTwitter/>
                                     </a>
-                                    <a href="/">
+                                    <a href="#">
                                         <AiFillFacebook/>
                                     </a>
-                                    <a href="/">
+                                    <a href="#">
                                         <AiFillInstagram/>
                                     </a>
                                 </div>
@@ -63,7 +63,7 @@ const Profile = () => {
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-2.5 gap-y-4 sm:gap-6 2xl:gap-8 mt-8 lg:mt-10 m-auto w-[80%] md:w-[90%] lg:w-[90%]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-2.5 gap-y-4 sm:gap-6 2xl:gap-8 mt-8 lg:mt-10 m-auto w-[80%] md:w-[90%] lg:w-[90%]">
                 <BlogCard/>
                 <BlogCard/>
                 <BlogCard/>
